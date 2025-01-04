@@ -32,6 +32,10 @@ public class Product {
 		p.setPrice(p.getPrice() * 1.1);
 	}
 
+	public void nonStaticPriceUpdate() {
+		price *= 1.1;
+	}
+
 	@Override
 	public String toString() {
 		return String.format("%s, R$ %.2f", name, price);
